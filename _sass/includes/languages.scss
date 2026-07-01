@@ -1,0 +1,9 @@
+.languages {
+    margin-bottom: 20px;
+    .title {
+        @include header;
+    }
+    .idiom {
+        @include body-text;
+    }
+}
