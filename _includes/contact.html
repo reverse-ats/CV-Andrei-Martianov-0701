@@ -1,0 +1,104 @@
+{% assign contact = site.data.data.contact %}
+{% if contact %}
+<section class="contact">
+    <div class="title">Contact</div>
+    <div class="contact-grid">
+    <div class="left-column">
+
+    {% if contact.phone %}
+    <div class="contact-item">
+        <i data-feather="phone"></i>
+        <a href="#">
+            {{contact.phone}}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.telegram %}
+    <div class="contact-item">
+        <i data-feather="send"></i>
+        <a href="https://t.me/{{contact.telegram}}">
+            {{contact.telegram}}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.linkedin %}
+    <div class="contact-item">
+        <i data-feather="linkedin"></i>
+        <a href="https://linkedin.com/in/{{contact.linkedin}}">
+            {{contact.linkedin}}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.email %}
+    <div class="contact-item">
+        <i data-feather="mail"></i>
+        <a href="mailto:{{contact.email}}">
+            {{contact.email}}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.timezone %}
+    <div class="contact-item">
+        <i data-feather="clock"></i>
+        <a href="https://www.timeanddate.com/time/zone/timezone/{{contact.timezone}}">
+           Timezone {{contact.timezone}}
+        </a>
+    </div>
+    {% endif %}
+
+
+    {% if contact.calendar %}
+    <div class="contact-item">
+        <i data-feather="calendar"></i>
+        <a href="{{contact.calendar}}">
+            Calendar
+        </a>
+    </div>
+    {% endif %}
+
+
+    </div>
+    <div class="right-column">
+
+    {% if contact.download %}
+    <div class="contact-item">
+        <i data-feather="download"></i>
+        <a href="{{contact.download}}" download>
+            Download this CV as a file
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.github %}
+    <div class="contact-item">
+        <i data-feather="github"></i>
+        <a href="https://github.com/{{contact.github}}">
+            {{contact.github}}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.gitlab %}
+    <div class="contact-item">
+        <i data-feather="gitlab"></i>
+        <a href="https://gitlab.com/{{contact.gitlab}}">
+            {{contact.gitlab}}
+        </a>
+    </div>
+    {% endif %}
+
+    {% if contact.print %}
+    <div class="contact-item">
+        <i data-feather="printer"></i>
+        <button class="contact-button" onclick="window.print()"> {{contact.print}}</button>
+    </div>
+    {% endif %}
+
+    </div>
+    </div>
+</section>
+{% endif %}
