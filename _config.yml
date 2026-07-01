@@ -1,0 +1,11 @@
+title: CV-Andrei-Martianov-0701
+description: "Developer's CV"
+baseurl: /CV-Andrei-Martianov-0701
+theme_skin: blue
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - docker-compose.yml
