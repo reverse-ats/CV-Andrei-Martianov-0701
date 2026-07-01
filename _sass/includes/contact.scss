@@ -1,0 +1,48 @@
+.contact {
+    margin-bottom: 20px;
+    .title {
+        @include header;
+    }
+    .contact-grid {
+        display: flex;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .contact-button {
+        background: none;
+        border: none;
+        padding-top: 4px;
+        padding-left: 4px;
+        cursor: pointer;
+        @include body-text;
+    }
+    
+    .left-column, .right-column {
+        flex: 1;
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+        svg {
+            width: 18px;
+            display: inline-block;
+            color: var(--fg-color);
+        }
+        a {
+            text-decoration: none;
+            padding-top: 4px;
+            padding-left: 4px;
+            @include body-text;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .contact-grid {
+            flex-direction: column;
+        }
+    }
+}
