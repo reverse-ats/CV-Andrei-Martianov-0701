@@ -1,0 +1,17 @@
+.skills {
+    margin-bottom: 20px;
+    padding-inline-start: 0px;
+
+    .title {
+        margin-top: 20px;
+        @include header;
+    }
+
+    .skill-list {
+        @include body-text;
+        padding-inline-start: 16px;
+        .skill {
+            @include body-text;
+        }
+    }
+}
