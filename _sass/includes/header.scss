@@ -1,0 +1,21 @@
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: block; /* Changed from flex to block for single column layout */
+    .title {
+        color: var(--fg-color-dark);
+        font-weight: bolder;
+        margin: 0 auto; /* Center the title */
+    }
+    input[type="checkbox"] {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    
+    label {
+        cursor: pointer;
+        color: var(--fg-color-dark);
+        display: none; /* Hide labels as they're not needed */
+    }
+}
